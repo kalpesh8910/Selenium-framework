@@ -13,7 +13,7 @@
 
 	<!-- <parameter name="selenium.url" value="https://test.enterprisesecure.com.au/payment/dashboard" 
 		/> -->
-	<parameter name="selenium.url" value="https://qbank.accelq.com/" />
+	<parameter name="selenium.url" value="https://www.filechannels.net/login" />
  <listeners>
 		<!--  <listener class-name="com.utility.CustomReporterListener" />  -->
 		<listener class-name="com.utility.CustomReporterEmailBuildSummary" />
@@ -36,7 +36,7 @@
 			</class>
 		</classes>
 	</test>  
-	<test name="TC-2. Negative Login validation.">		
+	<!-- <test name="TC-2. Negative Login validation.">		
 		<classes>
 			<class name="com.index.LoginIndex">
 				<methods>
@@ -44,5 +44,5 @@
 				</methods>
 			</class>
 		</classes>
-	</test>  
+	</test>   -->
 </suite>
