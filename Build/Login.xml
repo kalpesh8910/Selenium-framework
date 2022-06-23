@@ -5,6 +5,9 @@
 	<parameter name="selenium.host" value="localhost" />
 
 
+
+
+
 	<!-- Put Port of localhost RC/Grid Hub machine -->
 	<parameter name="selenium.port" value="4444" />
 
