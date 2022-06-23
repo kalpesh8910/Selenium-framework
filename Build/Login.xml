@@ -13,6 +13,9 @@
 	<parameter name="selenium.browser" value="chrome" />
 
 
+
+
+
 	<!-- <parameter name="selenium.url" value="https://test.enterprisesecure.com.au/payment/dashboard" 
 		/> -->
 	<parameter name="selenium.url" value="https://www.filechannels.net/login" />
