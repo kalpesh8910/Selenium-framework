@@ -17,6 +17,34 @@ Boolean bool;
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	public boolean verifysignoutText() {
+		
+		Common.pause(2);
+		WebElement var = driver.findElement(By.xpath(" //a[@href='/logout']"));
+		if(null!=var && var.isDisplayed()){
+		test.log(LogStatus.PASS, "Login is successful.");
+		bool=true;
+		}else {
+			test.log(LogStatus.FAIL,"Login not successful.");
+			bool=false;
+		}
+		return bool;
+	}
+
+	public boolean emailexist() {
+		
+		Common.pause(2);
+		WebElement var = driver.findElement(By.xpath("//*[contains(text(),'Please enter a valid email address')]"));
+		if(null!=var && var.isDisplayed()){
+		test.log(LogStatus.PASS, "Login is successful.");
+		bool=true;
+		}else {
+			test.log(LogStatus.FAIL,"Login not successful.");
+			bool=false;
+		}
+		return bool;
+	}
 
 	public boolean verifySuccessfulLogin() {
 		

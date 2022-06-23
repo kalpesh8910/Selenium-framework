@@ -160,6 +160,11 @@ public class Common {
 		// this.waitForAjax("0");
 	}
 	
+	public static String getText(WebDriver driver, WebElement element) {
+		
+		return element.getText();
+	}
+
 	public static void scrollToElement(WebDriver driver, WebElement element)
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;

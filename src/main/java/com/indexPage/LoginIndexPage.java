@@ -16,32 +16,48 @@ public class LoginIndexPage extends AbstractPage {
 		// TODO Auto-generated constructor stub
 	} 
 
-	@FindBy(id="qb-username")
-	WebElement email_field;
-	public LoginVerificationPage enterEmail(String username)
+	@FindBy(id="login-email")
+	WebElement filechannel_email_field;
+	public LoginVerificationPage EnterEmail(String username)
 	{
-		Common.enterDataIn(driver, email_field, username);
+		Common.enterDataIn(driver, filechannel_email_field, username);
 		return new LoginVerificationPage(driver);
 	}
 	
-	@FindBy(id="qb-password")
-	WebElement password_field;
-	public LoginVerificationPage enterPassword(String password)
+	@FindBy(id="login-password")
+	WebElement filechannel_password;
+	public LoginVerificationPage Enterpass(String password)
 	{
-		Common.enterDataIn(driver, password_field, password);
-		//Common.pause(2);
+		Common.enterDataIn(driver, filechannel_password, password);
+		return new LoginVerificationPage(driver);
+	}
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement letsgo_btn;
+	public LoginVerificationPage clickOnLetgoButton()
+	{
+		Common.clickOn(driver, letsgo_btn);
 		return new LoginVerificationPage(driver);
 	}
 	
 	
-	@FindBy(xpath = "//button[contains(text(),'Sign In')]")
-	WebElement login_button;
-	public LoginVerificationPage clickOnLoginButton()
+	@FindBy(id = "dropdownMenuButton")
+	WebElement threedot;
+	public LoginVerificationPage clickOnthreedot()
 	{
-		//login_button.click();
-		//driver.findElement(By.xpath("//button[contains(text(),'Sign In')]")).click();
-		Common.clickOn(driver, login_button);
+		Common.clickOn(driver, threedot);
 		return new LoginVerificationPage(driver);
 	}
+	
+	@FindBy(xpath = " //a[@href='/logout']")
+	WebElement logout;
+	public LoginVerificationPage getsignouttext()
+	{
+		Common.clickOn(driver, logout);
+		return new LoginVerificationPage(driver);
+	}
+	 
+	
+	
 
 }
