@@ -7,6 +7,11 @@
 	<!-- Put Port of localhost RC/Grid Hub machine -->
 	<parameter name="selenium.port" value="4444" />
 
+
+
+
+
+
 	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : 
 		chrome 3) IExplorer : ie8 / ie9 -->
 	<parameter name="selenium.browser" value="chrome" />
